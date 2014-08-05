@@ -1,6 +1,6 @@
-;;; helm-robe.el --- completing read function for robe
+;;; helm-robe.el --- completing read function for robe -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2013 by Syohei YOSHIDA
+;; Copyright (C) 2014 by Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 ;; URL:https://github.com/syohex/emacs-helm-robe
