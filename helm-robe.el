@@ -36,7 +36,7 @@
 (require 'helm-mode)
 
 ;;;###autoload
-(defun helm-robe-completing-read (prompt choices &optional predicate require-match &rest args)
+(defun helm-robe-completing-read (prompt choices &optional predicate require-match &rest _args)
   (let ((collection (mapcar (lambda (c) (if (listp c) (car c) c)) choices)))
     (helm-comp-read prompt collection :test predicate :must-match require-match)))
 
