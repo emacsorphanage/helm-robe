@@ -1,4 +1,7 @@
 Revision history for helm-robe.el
 
+Revision 0.02 2015/12/09 syohex
+    - Update function interface for latest robe
+
 Revision 0.01 2014/08/05 syohex
     - Initial Release
