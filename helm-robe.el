@@ -1,11 +1,11 @@
 ;;; helm-robe.el --- completing read function for robe -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2014 by Syohei YOSHIDA
+;; Copyright (C) 2015 by Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 ;; URL:https://github.com/syohex/emacs-helm-robe
 ;; Version: 0.01
-;; Package-Requires: ((helm "1.0"))
+;; Package-Requires: ((helm "1.7.7"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -33,9 +33,10 @@
 ;;; Code:
 
 (require 'helm)
+(require 'helm-mode)
 
 ;;;###autoload
-(defun helm-robe-completing-read (prompt choices &optional predicate require-match)
+(defun helm-robe-completing-read (prompt choices &optional predicate require-match &rest args)
   (let ((collection (mapcar (lambda (c) (if (listp c) (car c) c)) choices)))
     (helm-comp-read prompt collection :test predicate :must-match require-match)))
 
