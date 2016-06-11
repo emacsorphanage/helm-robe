@@ -7,7 +7,7 @@
 
 ## Screenshot
 
-![go-eldoc1](image/helm-robe1.png)
+![helm-robe](image/helm-robe1.png)
 
 
 ## Dependency
